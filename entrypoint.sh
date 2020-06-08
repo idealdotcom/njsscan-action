@@ -2,4 +2,5 @@
 
 set -e
 
-exec njsscan "$@"
+echo "Running njsscan with:" "$@"
+exec njsscan --json --output njsscan.json "$@"
