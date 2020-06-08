@@ -1,6 +1,7 @@
 #!/bin/bash
 
-set -e
+# set -e
 
 echo "Running njsscan with:" "$@"
-exec njsscan --json --output njsscan.json "$@"
+njsscan --json --output njsscan.json "$@"
+exit
