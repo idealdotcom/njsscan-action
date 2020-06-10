@@ -3,6 +3,6 @@
 # set -e
 
 echo "Running njsscan with: $@"
-njsscan --output njsscan.txt "$*"
+njsscan $*
 echo "njsscan finished with exit code $?"
 exit
